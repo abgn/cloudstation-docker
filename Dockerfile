@@ -13,5 +13,6 @@ RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8 || true
 RUN echo "Europe/Stockholm" > /etc/timezone
 RUN dpkg-reconfigure tzdata
 
+RUN 
 ENV LD_LIBRARY_PATH=/opt/Synology/CloudStation/lib
 ENTRYPOINT ["/usr/bin/supervisord"]
